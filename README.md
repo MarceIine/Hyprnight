@@ -43,7 +43,7 @@ Showcasing my **minimalist, manga-inspired Arch Linux setup**, built around the 
 ## **Installation**  
 Clone the repository into your home directory and navigate into it:  
 ```bash
-git clone https://github.com/MarceIine/Hyprnight.git $HOME/Hyprnight && cd $HOME/Hyprnight
+git clone https://github.com/MarceIine/Hyprnight.git --recursive $HOME/Hyprnight && cd $HOME/Hyprnight
 ```  
 
 Run the setup script to **stow the dotfiles** into `.config`:  
