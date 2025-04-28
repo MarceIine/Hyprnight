@@ -87,6 +87,7 @@ delete_links() {
 create_target_dir() {
     mkdir -p ~/.config
     mkdir -p ~/Wallpapers
+    mkdir -p ~/Screenshots
 }
 
 stow() {
