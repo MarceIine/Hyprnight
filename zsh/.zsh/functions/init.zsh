@@ -119,3 +119,15 @@ live-wallpaper-picker() {
 
   echo "Wallpaper set to: $video_file"
 }
+
+clear_history() {
+    echo -n "Do you want to clear the history? [y/N] "
+    read -r response  # Read user input
+
+    if [[ "$response" =~ ^[Yy]$ ]]; then
+        atuin search --delete-it-all
+        history -c
+    else
+    fi
+}
+
