@@ -48,7 +48,7 @@ git clone https://github.com/MarceIine/Hyprnight.git $HOME/Hyprnight && cd $HOME
 
 Run the setup script to **stow the dotfiles** into `.config`:  
 ```bash
-./setup -s
+./setup.sh -s
 ```  
 🔹 **Note:** If `.config/` already exists, it will be renamed to `.config.bak`, and a new `.config/` folder with the dotfiles will be created.  
 
