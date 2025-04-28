@@ -1,0 +1,49 @@
+/* Inverted Colors - Manga Panel Style */
+window {
+    margin: 0px;
+    border: 4px solid #ffffff; /* Thick white border */
+    border-radius: 0px; /* Sharp corners (no rounding) */
+    background-color: #000000; /* Black background (like inked panels) */
+    font-family: "Comic Sans MS", "Manga Temple", sans-serif; /* Playful font */
+}
+
+#input {
+    margin: 10px;
+    padding: 8px;
+    border: 2px solid #ffffff; /* White outline */
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#inner-box, #outer-box {
+    margin: 5px;
+    border: 0;
+    background-color: transparent;
+}
+
+#scroll {
+    margin: 0px;
+    border: 0;
+}
+
+#text {
+    margin: 5px;
+    color: #ffffff; /* Pure white text */
+    font-weight: bold;
+}
+
+#entry {
+    padding: 8px;
+    border: 0;
+    background-color: transparent;
+}
+
+#entry:selected {
+    background-color: #404040; /* Dark gray selection (like shaded ink) */
+    outline: 2px solid #ffffff; /* White outline on selection */
+}
+
+#entry > box {
+    margin-left: 10px;
+}

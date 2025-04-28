@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+NOTES_DIR="$HOME/.notes"
+
+open_notes() {
+    if [ -z "$TERMINAL" ]; then
+        echo "TERMINAL variable is not set." >&2
+        exit 1
+    fi
+    $TERMINAL -e sh -c "cd $NOTES_DIR && exec nvim note.txt"
+}
+
+# Ensure the notes directory exists
+mkdir -p "$NOTES_DIR"
+
+open_notes

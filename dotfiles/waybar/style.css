@@ -1,0 +1,98 @@
+@import "colors-waybar.css";
+
+* {
+    border: none;
+    font-family: 'Fira Code', 'Symbols Nerd Font Mono';
+    font-size: 15px;
+    font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+    min-height: 28px;
+}
+
+window#waybar {
+    background: transparent;
+    margin-top: 3px;
+}
+
+#custom-arch, #workspaces, #tray, #clock, #language, #backlight, #battery, #network, #wireplumber, #window, #taskbar{
+    border-radius: 10px;
+    background-color: @background;
+    color: @foreground;
+    margin-top: 3px;
+    margin-right: 15px;
+    padding-top: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#workspaces button {
+    background-color: @background-color;
+    color: @foreground;
+}
+#taskbar.empty {
+    opacity: 0;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+    transition: opacity 1s ease;
+}
+
+#window {
+    opacity: 1;
+    transition: opacity 1s ease
+}
+
+window#waybar.empty #window {
+    background: transparent;
+    opacity: 0;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+
+#custom-arch {
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+#backlight {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-right: 5px;
+    margin-right: 0;
+}
+
+#network {
+    margin-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-right: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#battery {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: 0;
+    padding-left: 5px;
+}
+
+#clock {
+    margin-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: 0;
+    padding-right: 5px;
+}
+
+#language {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: 0;
+    padding-left: 5px;
+}

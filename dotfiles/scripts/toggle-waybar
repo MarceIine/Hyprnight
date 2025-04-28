@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+# Function to toggle Waybar
+start_waybar() {
+    waybar &>/dev/null &
+}
+
+toggle_waybar() {
+    if pgrep -u $USER "waybar" >/dev/null; then
+        pkill -u $USER waybar
+    else
+        start_waybar
+    fi
+}
+
+# Check for -s flag
+if [[ "$1" == "-s" ]]; then
+    start_waybar
+else
+    toggle_waybar
+fi

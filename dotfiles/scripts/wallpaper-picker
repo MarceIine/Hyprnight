@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+WALLPAPERS_PATH="$@"
+
+pkill -u $USER feh
+selected_wallpaper=$(feh -r -X -Z -F --action "echo %F; pkill -u $USER feh" "$WALLPAPERS_PATH")
+
+if [ -n "$selected_wallpaper" ]; then
+    # Kill mpvpaper if running (for video wallpapers)
+    pkill -u $USER mpvpaper 2>/dev/null
+
+    # Start swww-daemon if not running
+    if ! pgrep -u $USER "swww-daemon" >/dev/null; then
+        swww-daemon >/dev/null 2>&1 &
+        sleep 1 # Give it a moment to initialize
+    fi
+
+    # Set wallpaper with swww
+    swww img "$selected_wallpaper" -t "random" >/dev/null 2>&1
+
+    # Apply colors using wal (pywal)
+    wal -i "$(swww query | awk '{print $8}')" -n >/dev/null 2>&1
+fi

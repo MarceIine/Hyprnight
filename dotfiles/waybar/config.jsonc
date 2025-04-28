@@ -1,0 +1,134 @@
+{
+    ////////////////
+    /// SETTINGS ///
+    ////////////////
+    "reload_style_on_change": true,
+    ///////////////
+    /// MODULES ///
+    ///////////////
+    "layer": "top",
+    "modules-left": [
+        "custom/arch",
+        "hyprland/workspaces",
+        "hyprland/window",
+        "wlr/taskbar"
+    ],
+    "modules-center": [
+        "clock",
+        "hyprland/language"
+    ],
+    "modules-right": [
+        "tray",
+        "wireplumber",
+        "backlight",
+        "network",
+        "battery"
+    ],
+    /////////////////////
+    /// CONFIGURATION ///
+    /////////////////////
+    "custom/arch": {
+        "format": "  ",
+        "tooltip": false,
+        "on-click": "pkill -u $USER wofi; wofi run -n"
+    },
+    "hyprland/language": {
+        "format": " {}",
+        "format-en": "(US)",
+        "format-ru": "(RU)",
+        "format-eo": "(EPO)"
+    },
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
+    },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "tooltip": true,
+        "show-special": true,
+        "expand": true,
+        "all-outputs": true,
+        "format-icons": {
+            "active": "",
+            "default": ""
+        }
+    },
+    "hyprland/window": {
+        "format": "",
+        "icon": true
+    },
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": {},
+        "icon-theme": "${i_theme}",
+        "spacing": 0,
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-middle": "close",
+        "on-click-right": "fullscreen"
+    },
+    "clock": {
+        "format": "<span> </span>{:%H:%M}"
+    },
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "<span>{icon}</span> {percent}%",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "tooltip": false
+    },
+    "wireplumber": {
+        "format": "<span>{icon}</span> {volume}%",
+        "format-muted": "",
+        "tooltip": false,
+        "format-icons": {
+            "headphone": "",
+            "default": [
+                "",
+                "",
+                "󰕾",
+                "󰕾",
+                "󰕾",
+                "",
+                "",
+                ""
+            ]
+        },
+        "scroll-step": 1,
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+    },
+    "network": {
+        "interface": "wlp3s0",
+        "format": "{ifname}",
+        "format-wifi": "<span> </span>{essid}",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "format-disconnected": "<span>󰖪 </span>",
+        "tooltip": false
+    },
+    "battery": {
+        "format": "<span>{icon}</span> {capacity}%",
+        "format-icons": [
+            "󱐴", // 0% - Empty
+            "", // 10%
+            "󰛟", // 20%
+            "󰛟", // 30%
+            "󰛟", // 40%
+            "󰛞", // 50%
+            "󰋑", // 60%
+            "󰋑", // 70%
+            "󰋑", // 80%
+            "" // 90% - Full
+        ],
+        "format-charging": "<span>󰻹</span> {capacity}%",
+        "tooltip": false
+    }
+}

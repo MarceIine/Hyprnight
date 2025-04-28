@@ -1,0 +1,106 @@
+########################
+### SYSTEM UTILITIES ###
+########################
+intel-ucode            # Intel CPU microcode updates (AMD users: amd-ucode)
+vulkan-intel           # Vulkan graphics driver for Intel GPUs (AMD: vulkan-radeon)
+base-devel             # Basic development tools (gcc, make, etc)
+mesa                   # Open-source OpenGL/Vulkan drivers (for Intel/AMD GPUs)
+dbus                   # Message bus system for inter-process communication
+base                   # Base system meta-package
+btop                   # Modern terminal system monitor (CPU/RAM/GPU/network)
+
+####################
+### AUDIO SYSTEM ###
+####################
+pipewire               # Modern audio/video processing engine
+wireplumber            # Session manager for PipeWire (required)
+pipewire-alsa          # ALSA compatibility layer
+pipewire-pulse         # PulseAudio replacement for compatibility
+
+########################
+### WINDOW SYSTEM ######
+########################
+hyprland               # Dynamic tiling Wayland compositor
+xdg-desktop-portal-hyprland  # Portal integration for Hyprland
+swayosd-git            # On-screen display controls for Wayland
+
+########################
+### CORE UTILITIES #####
+########################
+jq                     # Command-Line JSON Processor
+git                    # Version control system
+github-cli             # Official GitHub CLI tool
+zsh                    # Z shell interpreter
+man                    # Manual pages
+man-db                 # Manual page database
+ripgrep                # Modern grep replacement
+atuin                  # Better shell history management
+zoxide                 # Smarter directory navigation
+fzf                    # Fuzzy finder
+
+########################
+### GUI APPLICATIONS ###
+########################
+rofi                   # Application Launcher & More
+wofi                   # Wayland-native application launcher
+kitty                  # GPU-accelerated terminal emulator
+zen-browser-bin        # Privacy-focused web browser
+mpv                    # Versatile media player
+feh                    # Lightweight image viewer
+flameshot-git          # Powerful screenshot tool
+dunst                  # Customizable notification daemon
+waybar                 # Highly customizable Wayland bar
+nwg-look               # GTK theme switcher for Wayland
+dragon-drop            # Drag-and-drop utility
+
+########################
+### MEDIA TOOLS #######
+########################
+ffmpeg                 # Complete audio/video processing library
+brightnessctl          # Backlight control utility
+grim                   # Screenshot tool for Wayland
+swww                   # Wayland wallpaper daemon
+mpvpaper               # Video wallpaper utility
+cava                   # An audio visualizer 
+
+########################
+### DEVELOPMENT #######
+########################
+go                     # Go programming language (Golang) compiler/tools
+npm                    # Node.js package manager
+stow                   # Symlink organizer
+nvim                   # Modern Vim fork with Lua scripting (better defaults) 
+gitui                  # Terminal UI for git operations
+
+########################
+### SYSTEM TOOLS ######
+########################
+cliphist               # Clipboard history manager
+unzip                  # Zip archive extraction
+
+########################
+### SECURITY #########
+########################
+hyprlock               # Hyprland screen locker
+hypridle               # Hyprland idle management
+hyprpolkitagent        # PolicyKit authentication agent for Hyprland
+
+########################
+### FONTS #############
+########################
+ttf-jetbrains-mono     # JetBrains Mono typeface
+ttf-jetbrains-mono-nerd # Nerd Font patched version
+ttf-nerd-fonts-symbols # Iconic font symbols for tooling (Waybar, etc.)
+
+########################
+### THEMING ###########
+########################
+whitesur-gtk-theme     # macOS-like GTK theme
+bibata-cursor-theme    # Smooth cursor theme
+
+########################
+### MISC TOOLS ########
+########################
+yazi                   # Modern terminal file manager
+spotube-bin            # Spotify client alternative
+python-pywal           # Color scheme generator
