@@ -1,6 +1,6 @@
 # **Hyprnight**  
 
-[Installation](#installation) | [Showcase](#hyprnight-preview) | [Keybinds](#basic-keybinds)  
+[Installation](#installation) | [Showcase](#hyprnight-preview) | [Keybinds](#-basic-keybinds)  
 
 ---
 
