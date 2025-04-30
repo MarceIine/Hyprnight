@@ -165,5 +165,6 @@ fi
 # eval "$(zoxide init zsh)"
 #
 #
-#fastfetch --config "$HOME/.config/fastfetch/presets/arch.jsonc"
+
+fastfetch --config "$HOME/.config/fastfetch/presets/arch.jsonc"
 
