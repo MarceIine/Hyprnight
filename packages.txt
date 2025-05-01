@@ -27,6 +27,7 @@ swayosd-git            # On-screen display controls for Wayland
 ########################
 ### CORE UTILITIES #####
 ########################
+bat                    # A cat(1) clone with syntax highlighting and Git integration
 7zip                   # Extracting tool
 jq                     # Command-Line JSON Processor
 git                    # Version control system
